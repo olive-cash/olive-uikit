@@ -52,17 +52,17 @@ export const links = [
     items: [
       {
         label: "Github",
-        href: "https://github.com/blzd-dev",
+        href: "https://github.com/olive-cash",
         external: true,
       },
       {
         label: "Docs",
-        href: "https://blizzardmoney.medium.com",
+        href: "https://olive-cash.medium.com",
         external: true,
       },
       {
         label: "Blog",
-        href: "https://blizzardmoney.medium.com",
+        href: "https://olive-cash.medium.com",
         external: true,
       },
     ],
@@ -76,18 +76,18 @@ export const socials = [
     items: [
       {
         label: "English",
-        href: "https://t.me/BlizzardMoney",
+        href: "https://t.me/olive_cash_chat",
       },
       {
         label: "Announcements",
-        href: "https://t.me/YetiTracker",
+        href: "https://t.me/olive_cash",
       },
     ],
   },
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/money_blizzard",
+    href: "https://twitter.com/OliveCashBsc",
   },
 ];
 
