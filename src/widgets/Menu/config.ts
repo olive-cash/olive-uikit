@@ -31,7 +31,7 @@ export const links = [
     href: "/caves",
   },
   {
-    label: "Blizzard",
+    label: "Olive",
     icon: "PoolIcon",
     href: "/pools",
   },

@@ -1,14 +1,14 @@
 {
-  "name": "@blzd-dev/uikit",
+  "name": "@olive-dev/uikit",
   "version": "0.13.22",
-  "description": "Set of UI components for Blizzard projects",
+  "description": "Set of UI components for Olive projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "repository": "https://github.com/blzd-devs/blzd-uikit",
+  "repository": "https://github.com/olive-cash/olive-uikit",
   "license": "MIT",
   "scripts": {
     "build": "rm -rf ./dist && rollup -c && tsc -d --emitDeclarationOnly --declarationDir dist",
