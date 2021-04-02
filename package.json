@@ -1,6 +1,6 @@
 {
   "name": "@olive-dev/uikit",
-  "version": "0.13.23",
+  "version": "0.13.24",
   "description": "Set of UI components for Olive projects",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
