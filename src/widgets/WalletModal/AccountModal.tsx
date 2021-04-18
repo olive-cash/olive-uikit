@@ -9,11 +9,12 @@ import { connectorLocalStorageKey } from "./config";
 
 interface Props {
   account: string;
+  priceLink?: string;
   logout: () => void;
   onDismiss?: () => void;
 }
 
-const AccountModal: React.FC<Props> = ({ account, logout, onDismiss = () => null }) => (
+const AccountModal: React.FC<Props> = ({ account, priceLink, logout, onDismiss = () => null }) => (
   <Modal title="Your wallet" onDismiss={onDismiss}>
     <Text
       fontSize="20px"
@@ -23,8 +24,16 @@ const AccountModal: React.FC<Props> = ({ account, logout, onDismiss = () => null
       {account}
     </Text>
     <Flex mb="32px">
-      <LinkExternal small href={`https://bscscan.com/address/${account}`} mr="16px">
-        View on BscScan
+      <LinkExternal
+        small
+        href={
+          priceLink?.includes("pancake")
+            ? `https://bscscan.com/address/${account}`
+            : `https://cchain.explorer.avax.network/address/${account}`
+        }
+        mr="16px"
+      >
+        View on Explorer
       </LinkExternal>
       <CopyToClipboard toCopy={account}>Copy Address</CopyToClipboard>
     </Flex>

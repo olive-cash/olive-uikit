@@ -5,12 +5,13 @@ import { Login } from "../../WalletModal/types";
 
 interface Props {
   account?: string;
+  priceLink?: string;
   login: Login;
   logout: () => void;
 }
 
-const UserBlock: React.FC<Props> = ({ account, login, logout }) => {
-  const { onPresentConnectModal, onPresentAccountModal } = useWalletModal(login, logout, account);
+const UserBlock: React.FC<Props> = ({ account, priceLink, login, logout }) => {
+  const { onPresentConnectModal, onPresentAccountModal } = useWalletModal(login, logout, account, priceLink);
   const accountEllipsis = account ? `${account.substring(0, 4)}...${account.substring(account.length - 4)}` : null;
   return (
     <div>
